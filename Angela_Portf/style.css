@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+  
+   html,
+   body {
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+   }
+    body::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: #f5f6f7;        /* color of the tracking area */
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #404040;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 2px solid #f5f6f7;  /* creates padding around scroll thumb */
+    }
+    .todo{
+        background-image: url(images/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar{
+        padding: 1.8rem;
+        font-size: 2.4rem;
+       }
+
+       @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
+      .lista {  
+        /* This section calls the slideInFromLeft animation we defined above */
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+      }
+
+       .navbar-brand{
+        width: 25%;
+       }
+       .navbar-brand img{
+        width: 50px;
+       }
+       .navbar-collapse{
+        align-items: center;
+        width: 50%;
+        flex-grow: unset;
+       }
+       .lista{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .nav-item a{
+        padding:14px 16px;
+        color: white;
+        font-family: "Raleway", sans-serif !important;
+       }
+       .nav-item a:hover {
+        color: #e63946 !important;
+        text-decoration: underline;
+      }
+      .social{
+        width: 25%;
+      }
+      .presentate{
+        height: 70vh;
+        overflow: hidden;
+      }
+      .angelita{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-content: end;
+        transform: translateY(-24%);
+        z-index: 1;
+      }
+      .angelita img{
+        height: 80%;
+        opacity: 80%;
+      }
+
+      @keyframes Appear{
+        0% {
+            transform: translateY(-200%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+      }
+      .encabeza{
+        position: relative;
+        height: 24%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #404040;
+        transform: translateY(90%);
+        z-index: 2;
+      }
+      .encabeza h1{
+        font-size: 8rem;
+        overflow: hidden;
+        animation: 1s ease-out 0s 1 Appear;
+      }
+      .encabeza h5{
+        font-size: 2.4rem;
+        overflow: hidden;
+        animation: 1s ease-out 0s 1 Appear;
+      }
