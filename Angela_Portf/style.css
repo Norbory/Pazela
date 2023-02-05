@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap'); */
 
 *{
     overflow-x: hidden;
@@ -185,23 +185,6 @@
         }
         100% {
           transform: translateX(0);
-        }
-      }
-      @keyframes procesa{
-        0%{
-          width: 0%;
-        }
-        25%{
-            width: 50%;
-        }
-        50%{
-            width: 75%;
-        }
-        75%{
-            width: 85%;
-        }
-        100%{
-            width: 100%;
         }
       }
 
