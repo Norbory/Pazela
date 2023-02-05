@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 *{
     overflow-x: hidden;
@@ -29,23 +30,12 @@
     .todo{
         background-image: url(images/fondo.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        /* background-size: cover; */
     }
-
-    .navbar{
+      .navbar{
         padding: 1.8rem;
         font-size: 2.4rem;
-       }
-
-       @keyframes slideInFromLeft {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-      
+       }      
       .lista {  
         /* This section calls the slideInFromLeft animation we defined above */
         animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -98,15 +88,6 @@
         height: 80%;
         opacity: 80%;
       }
-
-      @keyframes Appear{
-        0% {
-            transform: translateY(-200%);
-          }
-          100% {
-            transform: translateY(0);
-          }
-      }
       .encabeza{
         position: relative;
         height: 24%;
@@ -121,10 +102,129 @@
       .encabeza h1{
         font-size: 8rem;
         overflow: hidden;
-        animation: 1s ease-out 0s 1 Appear;
+        animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
       }
       .encabeza h5{
         font-size: 2.4rem;
         overflow: hidden;
-        animation: 1s ease-out 0s 1 Appear;
+        animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+      .titulo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .titulo h1{
+        font-size: 4.8rem;
+        color: #3c6e71;
+        font-family: 'Lato', sans-serif;
+        text-decoration: underline #4d908e;
+      }
+      .titulo p{
+        width: 80%;
+        font-size: 2.4rem;
+      }
+      .titulo h3{
+        font-size: 4rem;
+        color: #3c6e71;
+        overflow: hidden;
+      }
+      .caja{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+      }
+      .caja .ilustrator, .caja .Photoshop, .caja .Design{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .caja .ilustrator img{
+        width: 100px;
+      }
+      .progress{
+        height: 20px;
+        width: 78%;
+      }
+      .progress div{
+        font-size: 1.2rem;
+      }
+      .caja .Photoshop img{
+        width: 78px;
+      }
+      .caja .Design img{
+        width: 85px;
+      }
+      footer span{
+        font-size: 1.2rem;
+      }
+
+    /* Keyframes*/
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 50% }
+      }
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+      @keyframes Appear{  
+        0% {
+            transform: translateY(-200%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+      }
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes procesa{
+        0%{
+          width: 0%;
+        }
+        25%{
+            width: 50%;
+        }
+        50%{
+            width: 75%;
+        }
+        75%{
+            width: 85%;
+        }
+        100%{
+            width: 100%;
+        }
+      }
+
+    /* Medias */
+      @media screen and (max-width: 750px) {
+        .encabeza{
+          color: #ffffff;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .encabeza h1{
+          font-size: 5rem;
+        }
+        .encabeza h5{
+          font-size: 1.5rem;
+        }
+        .titulo h1{
+          font-size: 2.4rem;
+        }
+        .titulo p{
+          font-size: 1.5rem;
+        }
+        .titulo h3{
+          font-size: 2rem;
+        }
       }
