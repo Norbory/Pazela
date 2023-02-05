@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 *{
     overflow-x: hidden;
@@ -61,7 +61,7 @@
        .nav-item a{
         padding:14px 16px;
         color: white;
-        font-family: "Raleway", sans-serif !important;
+        font-family: "Raleway", sans-serif;
        }
        .nav-item a:hover {
         color: #e63946 !important;
@@ -163,12 +163,12 @@
     /* Keyframes*/
       /* The typing effect */
       @keyframes typing {
-        from { width: 0 }
-        to { width: 50% }
+        from { width: 0; }
+        to { width: 50%; }
       }
       /* The typewriter cursor effect */
       @keyframes blink-caret {
-        from, to { border-color: transparent }
+        from, to { border-color: transparent; }
         50% { border-color: orange; }
       }
       @keyframes Appear{  
